@@ -8,5 +8,7 @@ RUN  curl -L --output /tmp/kustomize_v3.3.0_linux_amd64.tar.gz https://github.co
   && chmod +x /usr/local/bin/kustomize \
   && mkdir ~/.ssh \
   && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+COPY kustomize-build-multi /usr/local/bin
+RUN chmod a+x /usr/local/bin/kustomize-build-multi
 USER kustomize
 WORKDIR /src
