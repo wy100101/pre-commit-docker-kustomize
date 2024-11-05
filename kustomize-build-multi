@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 base_dir="$1"
 max_depth="$2"
 for ksf in $(find "$base_dir" -maxdepth "$max_depth" -name kustomization.yaml); do
