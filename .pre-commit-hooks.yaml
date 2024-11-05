@@ -1,8 +1,8 @@
--   id: kustomize
-    name: kustomize (via docker)
-    description: kustomize provided by docker
-    entry: kustomize build
+-   id: kustomize-multi
+    name: kustomize multi (via docker)
+    description: kustomize build provided by docker
+    entry: kustomize-build-multi
     language: docker
-    args: [overlay/production-us]
+    args: [overlay/production-us, 1]
     always_run: true
     pass_filenames: false
