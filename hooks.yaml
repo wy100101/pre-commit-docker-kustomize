@@ -1,5 +1,5 @@
--   id: kustomize
-    name: kustomize (via docker)
+-   id: kustomize-multi
+    name: kustomize-multi (via docker)
     description: kustomize provided by docker
     entry: kustomize-build-multi
     language: docker
