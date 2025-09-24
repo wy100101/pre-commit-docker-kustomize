@@ -1,6 +1,7 @@
 FROM alpine:latest
 COPY kustomize-build-multi /usr/local/bin
 RUN chmod a+x /usr/local/bin/kustomize-build-multi
+RUN apk update && apk upgrade
 RUN adduser kustomize -D \
   && apk add curl git openssh \
   && git config --global url.ssh://git@github.com/.insteadOf https://github.com/
